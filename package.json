@@ -2,6 +2,17 @@
   "name": "custom-expo-template",
   "version": "1.0.0",
   "main": "index.ts",
+  "keywords": ["expo", "template"],
+  "files": [
+    "*",
+    "app",
+    "components",
+    "lib",
+    "hooks",
+    "context",
+    "screen"
+  ],
+  "description": "A custom expo template project to make the entire expo app building process more reliable and streamlined.",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

@@ -8,7 +8,15 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "types": ["nativewind/types"],
-    "tsBuildInfoFile": ".tsbuildinfo"
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*" : ["./components/*"],
+      "@/lib/*" : ["./lib/*"],
+      "@/screens/*" : ["./screens/*"],
+      "@/context/*" : ["./context/*"],
+      "@/hooks/*" : ["./hooks/*"]
+    }
   },
   "include": [
     "**/*.ts",
