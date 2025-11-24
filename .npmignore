@@ -1,0 +1,45 @@
+# node dependencies
+node_modules/
+
+# expo files & build caches
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# platform-specific secrets & signing
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS files
+.DS_Store
+
+# local env files
+.env*
+!.env.example
+
+# typescript build
+*.tsbuildinfo
+
+# generated native folders for managed workflow
+/ios
+/android
+
+# editors
+.vscode/
+.idea/
+
+# CI files (optional)
+.github/
+
+# do NOT publish your dev template script
+scripts/setup.js

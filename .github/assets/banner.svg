@@ -1,0 +1,12 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="360" rx="40" fill="#0b0f17"/>
+  <text x="60" y="150" fill="#32E0C4" font-size="68" font-weight="700" font-family="Inter, sans-serif">
+    Coderooz — Expo Template
+  </text>
+  <text x="60" y="240" fill="#9CA3AF" font-size="30" font-family="Inter, sans-serif">
+    A production-ready Expo starter built with TypeScript + NativeWind
+  </text>
+  <circle cx="1080" cy="180" r="60" fill="#32E0C4" opacity="0.12"/>
+  <circle cx="1020" cy="180" r="90" fill="#32E0C4" opacity="0.06"/>
+  <circle cx="980" cy="180" r="130" fill="#32E0C4" opacity="0.04"/>
+</svg>
