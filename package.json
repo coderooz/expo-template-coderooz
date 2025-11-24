@@ -24,7 +24,6 @@
     "coderooz"
   ],
   "main": "index",
-  "type": "module",
   "files": [
     "App.tsx",
     "index.ts",

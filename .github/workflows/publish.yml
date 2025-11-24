@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Auto bump version
-        if: "! contains(github.event.head_commit.message, '[skip publish]')"
+        if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') }}
         run: |
           npm version patch --no-git-tag-version
           git add package.json
@@ -34,7 +34,7 @@ jobs:
           git push || echo "No changes to push"
 
       - name: Publish to npm
-        if: "! contains(github.event.head_commit.message, '[skip publish]')"
+        if: ${{ ! contains(github.event.head_commit.message, '[skip publish]') }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
