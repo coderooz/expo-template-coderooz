@@ -24,9 +24,9 @@ export default function LoginForm() {
       id: 1,
       userName: inputMain as string,
       name: {
-        first_name: "Ranit",
-        last_name: "Saha",
-        full_name : "Ranit Saha",
+        first_name: "User_First",
+        last_name: "User_Last",
+        full_name : "User_First User_Last",
       },
       clerkId: 1,
       isLogged: true
