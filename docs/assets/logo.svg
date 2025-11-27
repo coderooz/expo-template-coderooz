@@ -1,0 +1,5 @@
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="a" x1="0" x2="220" y1="0" y2="50" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs><rect x="5" y="5" width="40" height="40" rx="10" fill="url(#a)"/><path d="m22 17 8 8-8 8" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="55" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#334155">
+    Coderooz
+  </text><text x="155" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="url(#a)">
+    Template
+  </text></svg>
