@@ -1,0 +1,61 @@
+---
+# This layout is used for secondary pages such as docs pages.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <base href="{{ site.baseurl }}/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- GitHub Markdown Styles -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+
+<body class="markdown-body" style="padding:32px; max-width:960px; margin:auto;">
+  
+  <!-- Header -->
+  <header style="display:flex; align-items:center; gap:12px; margin-bottom:24px;">
+    <a href="{{ site.baseurl }}/" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+      {% if site.logo %}
+        <img src="{{ site.logo }}" height="38" alt="Logo">
+      {% endif %}
+      <span style="font-size:20px; font-weight:700; color:#24292f;">{{ site.title }}</span>
+    </a>
+  </header>
+
+  <!-- Navigation Tabs -->
+  {% if site.nav %}
+  <nav style="margin-bottom:24px; display:flex; gap:16px; flex-wrap:wrap;">
+    {% for item in site.nav %}
+      {% assign label = item[0] %}
+      {% assign link = item[1] %}
+      <a href="{{ site.baseurl }}/{{ link }}"
+         style="text-decoration:none; font-weight:500; padding-bottom:4px; border-bottom:2px solid transparent;"
+         class="{% if page.url contains link %}active-nav{% endif %}">
+        {{ label }}
+      </a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
+  <!-- Page Content -->
+  <main style="min-height:60vh;">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer style="margin-top:40px; text-align:center; font-size:14px; color:#777;">
+    {{ site.title }} Documentation · Updated {{ site.time | date: "%Y" }}
+  </footer>
+
+</body>
+</html>

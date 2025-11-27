@@ -1,8 +1,18 @@
 :root {
-    --brand: #2563eb;
-  }
-  
-  h1, h2, h3, h4 {
-    color: var(--brand);
-    font-weight: 700;
-  }
+  --brand: #2563eb;
+}
+
+h1, h2, h3, h4 {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.active-nav {
+  border-color: #0969da !important;
+  color: #0969da !important;
+}
+
+nav a:hover {
+  color: #24292f;
+  border-color: #6e7781;
+} 

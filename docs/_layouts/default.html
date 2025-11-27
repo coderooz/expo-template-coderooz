@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Make relative links work under /expo-template-coderooz/ -->
+  <base href="{{ site.baseurl }}/">
+
+  <!-- Theme meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- GitHub theme default CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.0/github-markdown.min.css">
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+<body class="markdown-body" style="padding:32px; max-width:960px; margin:auto;">
+  
+  <header style="display:flex; align-items:center; gap:12px; margin-bottom:28px;">
+    {% if site.logo %}
+    <img src="{{ site.logo }}" height="42" alt="logo">
+    {% endif %}
+    <h1 style="margin:0;">{{ site.title }}</h1>
+  </header>
+
+  <!-- 🔥 This renders markdown -->
+  <main>
+    {{ content }}
+  </main>
+
+  <footer style="margin-top: 40px; font-size:14px; color:#999;">
+    {{ site.description }} · Powered by GitHub Pages
+  </footer>
+</body>
+</html>
