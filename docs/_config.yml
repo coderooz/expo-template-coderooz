@@ -1,0 +1,15 @@
+title: Coderooz Expo Template
+description: A production-ready Expo starter for real business apps
+theme: jekyll-theme-primer
+markdown: GFM
+logo: /assets/logo.svg
+show_downloads: true
+google_analytics:
+nav:
+  - Home: index.md
+  - Quick Start: getting-started.md
+  - Features: features.md
+  - UI Components: ui-components.md
+  - API: api-integration.md
+  - CLI: cli-commands.md
+  - Changelog: changelog.md

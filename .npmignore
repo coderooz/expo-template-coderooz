@@ -43,3 +43,4 @@ yarn-error.*
 
 # do NOT publish your dev template script
 scripts/setup.js
+docs/

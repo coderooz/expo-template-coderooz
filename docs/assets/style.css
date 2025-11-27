@@ -1,0 +1,8 @@
+:root {
+    --brand: #2563eb;
+  }
+  
+  h1, h2, h3, h4 {
+    color: var(--brand);
+    font-weight: 700;
+  }
