@@ -87,7 +87,7 @@
     "expo-splash-screen": "~31.0.13",
     "expo-sqlite": "~16.0.10",
     "expo-status-bar": "~3.0.9",
-    "expo-symbols": "~1.0.8",
+    "expo-symbols": "~57.0.3",
     "expo-updates": "~29.0.19",
     "nativewind": "^4.2.1",
     "prettier-plugin-tailwindcss": "~0.5.14",
